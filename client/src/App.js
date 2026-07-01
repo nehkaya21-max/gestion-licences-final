@@ -84,7 +84,6 @@ function App() {
     }
   };
 
-  // SAUVEGARDE ET INCRÉMENTATION SÉCURISÉE
   // SAUVEGARDE ET INCRÉMENTATION SÉCURISÉE (VERSION CLIENT-SIDE BACKUP)
   const enregistrerJoueur = async (e) => {
     e.preventDefault();
@@ -186,12 +185,19 @@ function App() {
         {/* APERÇU DE LA LICENCE */}
         <div className="col-lg-4 d-flex justify-content-center">
           <div id="carte-joueur" className="licence-box">
-            <div className="watermark"><img src="/logo_gauche.png" alt="" /></div>
-            <div className="licence-header">
-              <img src="/logo_gauche.png" className="logo-img" alt="" />
-              <div className="header-text"><h6>COMITÉ SETISPORT</h6><p>ÉDITION 2026</p></div>
-              <img src="/logo_coupe.png" className="logo-img" alt="" />
+            <div className="watermark">
+              <img src={process.env.PUBLIC_URL + '/logo_gauche.png'} alt="" />
             </div>
+
+            <div className="licence-header">
+              <img src={process.env.PUBLIC_URL + '/logo_gauche.png'} alt="Logo Gauche" className="logo-img" />
+              <div className="header-text">
+                <h6>COMITÉ SETISPORT</h6>
+                <p>ÉDITION 2026</p>
+              </div>
+              <img src={process.env.PUBLIC_URL + '/logo_coupe.png'} className="logo-img" alt="" />
+            </div>
+
             <div className="badge-type">LICENCE JOUEUR</div>
 
             <div className="photo-container">
