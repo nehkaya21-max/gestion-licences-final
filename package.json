@@ -1,0 +1,26 @@
+{
+  "name": "projet_licence",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.15.0",
+    "body-parser": "^2.2.2",
+    "bootstrap": "^5.3.8",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "html2pdf.js": "^0.14.0",
+    "multer": "^2.1.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.22.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "react-scripts": "^5.0.1"
+  }
+}
